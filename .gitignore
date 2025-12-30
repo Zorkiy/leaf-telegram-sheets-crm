@@ -11,3 +11,6 @@
 /.vscode/
 /project-structure.txt
 /tg-sheets-leaf-php.code-workspace
+
+# Binary tools
+bin/ngrok
