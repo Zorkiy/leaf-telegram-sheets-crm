@@ -1,0 +1,22 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+      args:
+        USER_ID: ${UID:-1000}
+        GROUP_ID: ${GID:-1000}
+    container_name: leaf_bot
+    ports:
+      - "8080:80"
+    volumes:
+      - .:/var/www/html
+      - /var/www/html/vendor
+    # Перезавантаження при падінні
+    restart: unless-stopped
+    networks:
+      - leaf_net
+
+networks:
+  leaf_net:
+    driver: bridge

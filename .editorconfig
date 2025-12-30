@@ -1,0 +1,43 @@
+# Це кореневий файл конфігурації (top-most configuration file)
+root = true
+
+[*]
+# Глобальні налаштування для всіх файлів
+charset = utf-8
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+indent_style = space
+indent_size = 4
+
+[*.php]
+# Дотримання стандартів PSR-12 / PER Coding Style
+indent_size = 4
+
+[*.{js,css,html,json,yaml,yml}]
+# Стандарт для фронтенд-технологій та конфігів (2 пробіли)
+indent_size = 2
+
+[*.sql]
+# Форматування для SQL запитів
+indent_size = 4
+
+[*.{sh,bash}]
+# Скрипти оболонки (shell scripts)
+indent_size = 4
+
+[*.md]
+# У Markdown два пробіли в кінці рядка означають розрив рядка
+trim_trailing_whitespace = false
+
+[*.lua]
+# Налаштування для Lua (актуально для Neovim/Sway)
+indent_size = 2
+
+[{*.ini,.htaccess,.env}]
+# Конфігураційні файли
+indent_size = 4
+
+[.gitignore]
+# Спеціальні правила для ігнорування git
+indent_size = 4

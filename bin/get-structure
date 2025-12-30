@@ -1,0 +1,15 @@
+#!/bin/bash
+
+# Зупиняємо скрипт при першій помилці
+set -e
+
+echo "🔧 Отримання структури проєкту..."
+
+ls -la
+ls -la bin
+ls -la db
+ls -la db/migrations
+ls -la public
+ls -la src
+ls -la src/Controllers
+ls -la src/Services

@@ -1,0 +1,13 @@
+/vendor
+/.env
+/db/*.sqlite*
+/db/*.sqlite-journal
+!/db/.gitkeep
+/.DS_Store
+/logs/*
+!/logs/.gitkeep
+/credentials.json
+/.idea/
+/.vscode/
+/project-structure.txt
+/tg-sheets-leaf-php.code-workspace
